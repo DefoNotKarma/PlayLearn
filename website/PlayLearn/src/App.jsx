@@ -1,33 +1,29 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+  <img src=".\src\images\logo.png" className='logo'/>
+
+    <div className='wrapper'>
+        <h2>Login To Your Learning</h2>
+        <form action = './api/v1/PlayLearn' method='POST'>
+          <div className='login-username'>
+            <label>Username </label>
+            <input type='text' name='Username'placeholder='Your Username' required/>
+          </div>
+          <div className='login-password'>
+            <label>Password </label>
+            <input type='password' name='Password' placeholder='Your Password' required/>
+          </div>
+          <button type='submit'>Submit</button>
+        </form>
+
+    </div>
     </>
   )
 }
