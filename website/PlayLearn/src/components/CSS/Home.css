@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.para {
+    margin : 20px;
+    padding-bottom: 5px;
+}
+.container {
+    width: 100%;
+    min-height: calc(100vh - 100px); /* Adjust height to accommodate footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    display: inline-block;
+    text-decoration: none;
+}
+  
+.linkcss{
+    color : black;
+}
+
+.linkcss:hover{
+    color : black;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 0 10px #4CAF50, 0px 0px 14px #4CAF50;
+  }
+  
+
+footer {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Remove fixed positioning */
+    margin-top: auto; /* Ensure it remains at the bottom */
+}
+
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Add overflow */
+    max-height: 200px; /* Adjust maximum height as needed */
+}
+
+.footer-container p {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.footer-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-btn:last-child {
+    margin-right: 0;
+}
