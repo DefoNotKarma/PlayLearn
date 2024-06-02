@@ -1,0 +1,21 @@
+.form{
+    margin: 30px;
+    padding: 30px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: azure;
+}
+
+
+
+input {
+    text-align: center;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }

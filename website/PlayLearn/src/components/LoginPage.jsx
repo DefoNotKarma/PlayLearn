@@ -104,12 +104,10 @@ function Login() {
         <form action="POST">
           <label>Username</label>
           <input type="text" className="username" required/><br/>
-          <label>E-Mail</label>
-          <input type="email" className="email" required/><br/>
           <label>Password</label>
           <input type="password" className="password" required/><br/>
           <button type="submit">Login</button>
-          <a href='/reg'>Create an account</a>
+          <a href='/register'>Create an account</a>
         </form>
       </div>
     </div>
