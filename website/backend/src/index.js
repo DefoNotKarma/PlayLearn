@@ -1,18 +1,19 @@
-import express from 'express';
-import dotenv from 'dotenv';
+import express from "express";
+import dotenv from "dotenv";
 
+import authRoutes from "./router/auth.router.js";
 
-dotenv.config({
-    path : './.env'
-})
+dotenv.config();
 
 const app = express();
-const port =  process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.get('/' , (req ,res) => {
-    res.send("hello");
+app.get("/", (req, res) => {
+  res.send("Hello world");
 });
 
-app.listen(port, ()=>{
-    console.log(`server listening at ${port}`);
-})
+app.use("/api/auth", authRoutes);
+
+app.listen(port, () => {
+  console.log(`server listening at http://localhost:${port}`);
+});
