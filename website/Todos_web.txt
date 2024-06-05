@@ -1,0 +1,13 @@
+List of todos based on priority order:
+
+
+landing page (frontend):
+    - user opens up to a menu
+    - menu contains basic info requirements
+        + full name
+        + DOB
+        + age
+        + pfp
+        
+    - add routes and controllers for same
+    - send menu data to backend and Database
