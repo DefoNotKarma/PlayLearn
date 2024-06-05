@@ -110,6 +110,7 @@ function Login() {
           <a href='/register'>Create an account</a>
         </form>
       </div>
+      <a href='/application'><button>Jump to application</button></a>
     </div>
   );
 }

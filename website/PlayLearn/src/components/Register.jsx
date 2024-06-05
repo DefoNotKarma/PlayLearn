@@ -56,11 +56,11 @@ function Register(){
 
             <div>
                 <label>Email</label>
-                <input id='username' type="text" placeholder="Enter your Email" value={formData.email} onChange={handleChange}></input>
+                <input id='email' type="text" placeholder="Enter your Email" value={formData.email} onChange={handleChange}></input>
             </div>
             <div>
                 <label>Password</label>
-                <input id='username' type="password" placeholder="Enter your Password" value={formData.password} onChange={handleChange}></input>
+                <input id='password' type="password" placeholder="Enter your Password" value={formData.password} onChange={handleChange}></input>
             </div>
             <br />
             <button type="submit">Register</button>

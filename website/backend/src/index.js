@@ -14,6 +14,15 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 
+app.get("/application", (req, res) => {
+  const jsondata = {
+      message: 'Hello from the Express server!'
+    }
+
+  res.json(jsondata);
+ })
+
+
 app.listen(port, () => {
   console.log(`server listening at http://localhost:${port}`);
 });
