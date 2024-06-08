@@ -11,3 +11,9 @@ landing page (frontend):
         
     - add routes and controllers for same
     - send menu data to backend and Database
+
+
+send form data from frontend to backend
+    - parse data into json format
+    - recieve data on backend
+    - allow CORS (only from frontend aka. localhost:5173)
