@@ -3,8 +3,6 @@ import cors from cors;
 
 const app = express();
 
-
-
 app.use(
     express.cors({
         origin : process.env.CORS_ORIGIN,

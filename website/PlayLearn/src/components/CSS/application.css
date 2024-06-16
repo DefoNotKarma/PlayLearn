@@ -1,0 +1,53 @@
+body{
+    user-select: none;
+    
+    background-color: rgb(25, 25, 25);
+}
+
+body, html{
+    margin : 0px;
+    padding : 0px;
+}
+
+.navbar{
+    position: fixed;
+    top : 0;
+    left : 0;
+    background-color: #333;
+    width : 100%;
+    padding : 15px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.profile-pic{
+    width : 40px;
+    height: 40px;
+    border-radius:  50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 2.5px rgba(0, 255, 255, 0.282);
+}
+
+.navbar-right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > * {
+    margin : 0 1rem;
+}
+
+.navbar-right > * {
+    margin : 0 0.3rem;
+}
+
+.navbar > * {
+    margin: 0 10px; /* Adjust the spacing as needed */
+  }
