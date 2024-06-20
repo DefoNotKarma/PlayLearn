@@ -16,7 +16,7 @@ app.use("/api/auth", authRoutes);
 
 app.post("/application", (req, res) => {
   const jsondata = {
-      // username : "user",
+      username : "user",
       coverImg : "https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-girl-wearing-a-floral-crown-over-her-face-image_2905423.jpg",
       message: 'Hello from the Express server!'
     }

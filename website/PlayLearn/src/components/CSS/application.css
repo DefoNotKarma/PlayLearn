@@ -1,6 +1,4 @@
 body{
-    user-select: none;
-    
     background-color: rgb(25, 25, 25);
 }
 
@@ -13,11 +11,34 @@ body, html{
     position: fixed;
     top : 0;
     left : 0;
+    display: flex;
     background-color: #333;
     width : 100%;
     padding : 15px;
     justify-content: space-between;
-    display: flex;
+
+}
+
+.app h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: -20px;
+    margin-left: -5%;
+    background: linear-gradient(to right, red, blue);
+    color : transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
+    animation: anim 2.5s infinite alternate cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes anim {
+    0%{
+        text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
+    }
+    100%{
+        text-shadow: 0 0 60px rgba(0, 225, 255, 0.315);
+    }
 }
 
 .profile-pic{
@@ -49,5 +70,15 @@ body, html{
 }
 
 .navbar > * {
-    margin: 0 10px; /* Adjust the spacing as needed */
-  }
+    margin: 0 10px; 
+}
+
+.app-body {
+    margin-top: 75px; /* Adjust based on navbar height */
+    margin-left: 20px; /* Margin from the left side of the screen */
+    padding: 20px;
+    color: white; /* Assuming the text color needs to be readable on the dark background */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

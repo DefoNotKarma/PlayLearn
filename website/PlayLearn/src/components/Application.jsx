@@ -21,7 +21,7 @@ function Application() {
 
   return (
 
-    <div>``
+    <div className='app'>
       <div className='navbar'>
       <div className="navbar-left">
         <p>Home</p>
@@ -33,8 +33,10 @@ function Application() {
           <p>{ (Obj && Obj.username) ? Obj.username : 'username'}</p>
         </div>
       </div>
-      <h1>Application goes here</h1>
-      {Obj && <p>{Obj.message}</p>}
+      <div className="app-body">
+        <h1>Hello, {Obj && Obj.username ? Obj.username : 'username'}</h1>
+       
+      </div>
     </div>
   );
 }

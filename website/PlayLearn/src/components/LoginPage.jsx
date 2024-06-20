@@ -88,6 +88,7 @@ function Login() {
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      window.location.reload()
     });
 
     animate();
