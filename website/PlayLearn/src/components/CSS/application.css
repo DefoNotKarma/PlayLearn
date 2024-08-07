@@ -82,3 +82,175 @@ body, html{
     flex-direction: column;
     align-items: flex-start;
 }
+
+.app h3{
+    margin-left: -5%;
+    padding: 10px;
+    color: rgb(181, 219, 219);
+}
+
+
+.app .button {
+    width: 110px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px;
+    background-color: #ee8989;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+  }
+  
+  .app .svgIcon{
+    height: 25px;
+    -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+  }
+  
+  .app .bell path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .app .button:hover {
+      background-color: #ed6262;
+      -webkit-transition-duration: .5s;
+              transition-duration: .5s;
+  }
+  
+  .app .button:active {
+    -webkit-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+            transform: scale(0.97);
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+  }
+  
+  .app .button:hover .svgIcon {
+    -webkit-transform: rotate(250deg);
+        -ms-transform: rotate(250deg);
+            transform: rotate(250deg);
+    -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+  }
+  
+.app .home {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #58c958;
+    color: ghostwhite;
+   }
+   
+.app .home span {
+    position: relative;
+    z-index: 10;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+   }
+   
+.app .home:hover span {
+    color: black;
+   }
+   
+   .app .home::before,
+   .app .home::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .app .home::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    -webkit-transform: skew(30deg);
+        -ms-transform: skew(30deg);
+            transform: skew(30deg);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+.app .home:hover::before {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+   }
+   
+
+.app .question {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #ee8989;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: 0.3s;
+}
+
+.app .svgIcon {
+    height: 25px;
+    transition-duration: 0.5s;
+}
+
+.app .question:hover {
+    background-color: #ed6262;
+    transition-duration: 0.5s;
+}
+
+.app .question:active {
+    transform: scale(0.97);
+    transition-duration: 0.1s;
+}
+
+.app .question:hover .svgIcon {
+    transform: scale(1.12);
+    transition-duration: 0.5s;
+}
+
+.app .que{
+    margin-left: -1%;
+}
